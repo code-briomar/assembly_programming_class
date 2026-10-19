@@ -14,9 +14,9 @@ _start:
 
 loop_body:
     ; Convert counter to ASCII
-    mov rax, r12
-    add al, '0'
-    mov [digit], al
+    mov rax, r12 ; pass to rax
+    add al, '0' ; pass to al, very small, 1 fits into byte
+    mov [digit], al ;pass it to reserved space we labelled digit
 
     ; Print number
     mov rax, 1

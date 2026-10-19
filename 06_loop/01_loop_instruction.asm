@@ -20,7 +20,7 @@ repeat:
     pop rcx
     loop repeat    
 
-
+    
     mov rax, 60          
     xor rdi, rdi
     syscall
